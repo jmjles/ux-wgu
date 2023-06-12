@@ -9,9 +9,15 @@ import Reviews from "./reviews";
 export default function Home() {
   return (
     <main>
-      <nav></nav>
+      <nav >
+        <a href="#home" >Home</a>
+        <a href="#events">Events</a>
+        <a href="#map">Map</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#reviews">Review</a>
+      </nav>
       <div className="Main">
-        <section style={{ height: 300, position: "relative" }}>
+        <section style={{ height: 300, position: "relative" }} id="home">
           <Image
             src={island}
             alt="Island image"
@@ -28,7 +34,7 @@ export default function Home() {
         </section>
         <Events />
         <Map />
-        <section>
+        <section id="FAQ">
           <h2>Frequently Requested Information: </h2>
           <ul>
             <li>

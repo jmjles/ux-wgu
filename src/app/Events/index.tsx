@@ -4,9 +4,9 @@ const { DateTime } = require("luxon");
 
 const Events = () => {
   return (
-    <section style={{ display: "flex", flexDirection: "column" }}>
+    <section style={{ display: "flex", flexDirection: "column" }} id="events">
       <h2>Events happening soon</h2>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", alignSelf: "center" }}>
         {events.map((e, i) => (
           <div
             style={{

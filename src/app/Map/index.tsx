@@ -3,7 +3,7 @@ import locations from "./locations";
 const Map = () => {
   const [selected, setSelected] = useState(0);
   return (
-    <section className="MapSection">
+    <section className="MapSection" id="map">
       <h2 style={{ marginBottom: 6 }}>View Our Map</h2>
       <p style={{ textAlign: "center", marginBottom: 22 }}>
         View our top locations, services and landmarks our island has to offer.

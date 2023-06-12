@@ -1,10 +1,29 @@
 body {
   background-color: #eef6fc;
 }
+nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 6px;
+  background-color: #1e555c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 16px;
+  text-decoration: none;
+}
 .Main {
   display: flex;
   flex-direction: column;
   width: 75%;
+  margin-top: 33px;
 }
 .Selected {
   color: white;
@@ -22,6 +41,10 @@ body {
   text-align: center;
 }
 h1 {
+  font-size: 84px;
+  color: #061923;
+  text-transform: capitalize;
+
   text-align: center;
 }
 h2 {

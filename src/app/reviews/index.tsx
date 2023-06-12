@@ -18,7 +18,7 @@ const Reviews = () => {
     setReview("");
   };
   return (
-    <section style={{ display: "flex", flexDirection: "column" }}>
+    <section style={{ display: "flex", flexDirection: "column" }} id="reviews">
       <h2>Share your island Experience</h2>
       <form
         onSubmit={handleSubmit}
@@ -27,6 +27,7 @@ const Reviews = () => {
           flexDirection: "column",
           maxWidth: "800px",
           justifyItems: "center",
+          alignSelf: "center",
         }}
       >
         <input
@@ -54,7 +55,7 @@ const Reviews = () => {
       <div style={{ display: "flex", flexDirection: "column" }}>
         {allReviews.map((review, i) => (
           <div style={{ marginBottom: 12 }} key={i}>
-            <p>rating: {review.rating}/5</p>
+            <p style={{ textAlign: "right" }}>rating: {review.rating}/5</p>
             <p>{review.review}</p>
           </div>
         ))}
