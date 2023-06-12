@@ -52,8 +52,8 @@ const Reviews = () => {
         <input type="submit" />
       </form>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        {allReviews.map((review) => (
-          <div style={{ marginBottom: 12 }}>
+        {allReviews.map((review, i) => (
+          <div style={{ marginBottom: 12 }} key={i}>
             <p>rating: {review.rating}/5</p>
             <p>{review.review}</p>
           </div>

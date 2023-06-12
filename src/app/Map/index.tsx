@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import locations from "./locations";
-const index = () => {
+const Map = () => {
   const [selected, setSelected] = useState(0);
   return (
     <section className="MapSection">
@@ -15,6 +15,7 @@ const index = () => {
           {locations.map((loc, i) => (
             <div
               onClick={() => setSelected(i)}
+              key={i}
               className={selected === i ? "Selected" : "Location"}
             >
               {loc.name}
@@ -32,4 +33,4 @@ const index = () => {
     </section>
   );
 };
-export default index;
+export default Map;

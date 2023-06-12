@@ -6,7 +6,7 @@ class Loc {
     this.info = info;
   }
 }
-export default [
+const locations = [
   new Loc("Savory Bites", "Delicious fusion cuisine with global flavors."),
   new Loc(
     "Cheesy Heaven",
@@ -45,3 +45,4 @@ export default [
     "A chocolate lover's dream, featuring gourmet chocolate creations."
   ),
 ];
+export default locations;

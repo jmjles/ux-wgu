@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import anime from "animejs";
 import quotes from "./quotes";
 
-const index = () => {
+const Quotes = () => {
   const [quote, setQuote] = useState(0);
   useEffect(() => {
     const a = setInterval(() => {
@@ -25,9 +25,9 @@ const index = () => {
   });
   return (
     <section>
-      <p className="quote">"{quotes[quote]}"</p>
+      <p className="quote">&quot;{quotes[quote]}&quot;</p>
     </section>
   );
 };
 
-export default index;
+export default Quotes;

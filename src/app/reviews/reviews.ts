@@ -1,4 +1,4 @@
-export default [
+const reviews = [
   {
     review:
       "The island exceeded all my expectations! The stunning beaches, friendly locals, and exciting activities made it a perfect vacation destination.",
@@ -25,3 +25,4 @@ export default [
     rating: 3.5,
   },
 ];
+export default reviews;

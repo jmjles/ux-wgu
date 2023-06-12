@@ -18,6 +18,7 @@ const Events = () => {
               padding: 6,
               borderRightWidth: events.length - 1 === i ? 3 : 0,
             }}
+            key={i}
           >
             <p style={{ textAlign: "right" }}>
               {DateTime.now()
