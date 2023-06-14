@@ -24,7 +24,18 @@ const Quotes = () => {
     };
   });
   return (
-    <section>
+    <section
+      style={{
+        position: "absolute",
+        bottom: 30,
+        color: "white",
+        fontWeight: "bolder",
+        fontSize: 36,
+        width: "100%",
+        WebkitTextStrokeColor: "black",
+        WebkitTextStrokeWidth: 0.3,
+      }}
+    >
       <p className="quote">&quot;{quotes[quote]}&quot;</p>
     </section>
   );
