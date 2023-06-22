@@ -36,7 +36,9 @@ const Quotes = () => {
         WebkitTextStrokeWidth: 0.3,
       }}
     >
-      <p className="quote">&quot;{quotes[quote]}&quot;</p>
+      <p className="quote" style={{ backgroundColor: "rgba(0, 0, 0, 0.40)" }}>
+        &quot;{quotes[quote]}&quot;
+      </p>
     </section>
   );
 };

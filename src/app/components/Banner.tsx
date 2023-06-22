@@ -3,11 +3,11 @@ import island from "../assets/island.jpeg";
 import Image from "next/image";
 import Quotes from "../Quotes";
 import Link from "next/link";
-
+import BannerImg from "../assets/banner.png";
 const Banner = (props: props) => {
   return (
     <section
-      style={{ height: props.home ? "90vh" : 300, position: "relative" }}
+      style={{ height: props.home ? "90vh" : 400, position: "relative" }}
       id="home"
     >
       <Image
@@ -16,7 +16,7 @@ const Banner = (props: props) => {
         style={{ zIndex: -1 }}
         fill={true}
       />
-      <h1 style={{ zIndex: 10 }}>{props.heading}</h1>
+      <h1 style={{ zIndex: 10, color: "midnightblue" }}>{props.heading}</h1>
       {props.home && (
         <Link
           href="/locations"
@@ -25,20 +25,25 @@ const Banner = (props: props) => {
             right: 32,
             bottom: "50%",
             transform: "translateY(50%)",
-            backgroundColor: "#F1EFE4",
-            paddingLeft: 18,
-            paddingRight: 18,
             borderRadius: 10,
             cursor: "pointer",
             color: "black",
             textDecorationLine: "none",
           }}
         >
-          <p style={{}}>Explore What Our Island Has To Offer</p>
+          <Image
+            src={BannerImg}
+            alt="CTA Paper"
+            style={{ zIndex: -1 }}
+            fill={true}
+          />
+          <p style={{ paddingLeft: 32, paddingRight: 32 }}>
+            Explore What Our Island Has To Offer
+          </p>
         </Link>
       )}
       {props.home && (
-        <section className="Summary">
+        <section className="Summary" style={{ color: "midnightblue" }}>
           Discover Taniti, a tropical paradise in the Pacific with diverse
           landscapes, pristine beaches, rainforests, and a vibrant indigenous
           culture.
