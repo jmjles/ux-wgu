@@ -4,7 +4,6 @@ import React from "react";
 
 const Nav = () => {
   const route = usePathname();
-  console.log(route);
   const home = route === "/";
   const events = route === "/locations";
   const faq = route === "/faq";
